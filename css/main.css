@@ -1,7 +1,7 @@
 #dropdown-menu{
 	position:absolute;
 	top:0;
-	right:12px;
+	right:-12px;
 	font-size:0.8rem;
 	z-index:999;
 }
