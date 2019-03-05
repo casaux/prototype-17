@@ -1,0 +1,185 @@
+
+
+/* CASA patterns */
+
+/* detail panels, for displaying data */
+
+.detail {
+	margin:1rem 0 2.5rem 0;
+	border:1px solid #efefef;
+	padding:24px 12px;
+	background:#fefefe;
+	border-radius:4px;
+	border-top:4px solid #efefef;
+	box-shadow:#f7f7f7 1px 2px 2px
+}
+.detail p {margin-top:.7rem;}
+
+.detail h3{margin-bottom:1rem;}
+
+
+.detail-panels ul {list-style: none;display: block; width: 100%;float: left;clear:both;}
+.detail-panels ul li {float:left;clear:both;width:100%;}
+.detail-panels ul li:before {content:''!important;}
+.detail-panels h2 {display:inline-block;margin-top:0;margin-bottom:0;text-transform: uppercase;}
+
+.detail-panels .detail-icon, .detail-panels .detail-content, .detail-panels .detail-video {float:left;}
+.detail-panels .detail-icon {width: 8%;padding:1rem 1rem 1rem 0;}
+.detail-panels .detail-content {width:62%;padding:1rem 1rem 1rem 0;}
+.detail-panels .detail-video {width:30%;padding:1rem 0 1rem 0;}
+
+/* status box, for displaying information with a status */
+
+.casa-status-box{
+    margin:0;
+    border-bottom: .07rem dashed #ebedf2;
+    border-top: .07rem dashed #ebedf2;
+    padding: .8rem 0;
+	background-color: #fdfdfd;
+	padding: 24px 12px;
+}
+
+
+
+/* status badges */
+
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-expired {
+    color: #FFFFFF;
+    background-color: #BB0C0F;
+}
+.badge-in-progress {
+    color: #FFFFFF;
+    background-color: #12b5ea;
+}
+.badge-rec {
+    color: #000000;
+}
+.badge-com {
+    color: #000000;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+
+/* modal */
+
+.casa-modal{
+	position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5);z-index: 999;
+}
+
+.casa-modal-header, .casa-modal-footer, .casa-modal-body{
+	padding:1rem;
+}
+
+.casa-modal-inner{
+	margin: 1rem auto 0 auto; 
+	background: #FFF;
+	min-width: 320px; 
+	max-width: 480px;
+	border-radius: 10px;
+}
+
+.casa-modal-header{
+	border-bottom:1px solid #e5e5e5;
+	position: relative;
+}
+
+.casa-modal-close{
+	position:absolute;
+	top:1.2rem;
+	right:1.2rem;
+	width:20px;
+	height:20px;
+	background-image: url(../img/close.svg);
+	opacity:0.7;
+}
+
+.casa-modal-close span{
+	  visibility: hidden;
+}
+
+
+
+.casa-modal-footer{
+	border-top:1px solid #e5e5e5;
+}
+
+.westpac .au-header {background-color:#555555;}
+.westpac h2 {
+  font-family:"Times New Roman","Times",serif,sans-serif;
+  color: #621a4b;
+}
+.westpac .au-btn{
+  border-color: #d5002b;
+  background-color: #d5002b;
+}
+.westpac a.au-btn.au-btn--secondary {
+  background-color: #fff;
+    color: #2d373e;
+  border-color: #2d373e;
+}
+.westpac label:before {
+  content:"* ";
+  color:#d5002b;
+}
+.westpac footer{
+  background-color: #efece3;
+}
+
+
+
+.casa-label-guidance{
+display: block!important;
+  max-width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.casa-form-guidance{
+  color: #676767;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px !important;
+	margin-top:0 !important;
+  line-height: 1.5;
+}
+
+
+.casa-form-descriptor{
+	  font-weight: 600;
+
+}
+
+
+/*
+furnace focus over-rides for accessibility
+dark theme
+*/
+
+.au-accordion--dark .au-body .au-accordion__title:focus,.au-accordion--dark .au-accordion__title:focus{outline-color:#FFE17D;}
+.au-body.au-body--dark a:focus, .banner a:focus{outline-color:#FFE17D;}
+.au-body.au-body--dark [tabindex="0"]:focus,.au-body.au-body--dark :target{outline-color:#FFE17D;}
+.au-btn.au-btn--dark:focus,a.au-btn.au-btn--dark:focus{outline-color:#FFE17D;}
+.au-cta-link.au-cta-link--dark:focus{outline-color:#FFE17D;}
+.au-control-input--dark .au-control-input__input:focus+.au-control-input__text:before,.au-control-input--dark .au-control-input__input:focus+.au-control-input__text:after{outline-color:#FFE17D;}
+.au-direction-link.au-direction-link--dark:focus{outline-color:#FFE17D;}
+.au-body--dark .au-progress-indicator--dark .au-body .au-progress-indicator__link:focus,.au-progress-indicator--dark .au-body .au-progress-indicator__link:focus,.au-body--dark .au-progress-indicator--dark .au-progress-indicator__link:focus,.au-progress-indicator--dark .au-progress-indicator__link:focus{outline-color:#FFE17D;}
+.au-select.au-select--dark:focus{outline-color:#FFE17D;}
+.au-tags.au-tags--dark>li>a:focus,.au-tags.au-tags--dark>li>button:focus,.au-tags.au-tags--dark>dd>a:focus,.au-tags.au-tags--dark>dd>button:focus{outline-color:#FFE17D;}
+.au-text-input.au-text-input--dark:focus{outline-color:#FFE17D;}
+
+
+

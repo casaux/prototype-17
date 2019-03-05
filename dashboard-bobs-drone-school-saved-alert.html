@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>myCASA</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<!--<link rel="stylesheet" href="css/lead.css">-->
+	<link rel="stylesheet" href="css/main.css">
+	
+	<style type="text/css">
+	
+			.banner {padding-left: 25px;}
+			.banner {padding-top: 10px;}
+			.banner {padding-bottom: 10px;}
+		
+		
+			.icon-profile{
+				background-image:url(profile.png);
+			}
+			
+			.icon-licences{
+				background-image:url(licences.png);
+			}
+			
+			.icon-applications{
+				background-image:url(applications.png);
+			}
+		
+			.icon-reoc{
+				background-image:url(reoc.png);
+			}
+			
+			.icon-rpa{
+				background-image:url(drones.png);
+			}
+			.icon-organisation{
+				background-image:url(organisation.png);
+			}
+			.icon-personnel{
+				background-image:url(personnel.png);
+			}
+							.icon-aircraft{
+				background-image:url("aircraft.png");
+			}
+									.icon-aoc{
+				background-image:url("aoc.png");
+			}
+			.casa-dashboard-item{
+				background:#f5f5f5;
+				padding:12px 12px 12px 76px;
+				position:relative;
+				margin-bottom:1.8em;
+				height:6em;
+				border-radius: 5px;
+			}
+			
+			.casa-dashboard-item .icon{
+				height:64px;
+				width:64px;
+				position:absolute;
+				top:4px;
+				left:4px;
+				background-size: 64px 64px;
+
+			}
+			
+			.casa-dashboard-item h2{
+				font-size:1em;
+				margin:0;
+				padding:0;
+			}
+		
+
+		
+		 
+			 .casa-dashboard-item .dashbord-line{
+				 
+				 
+			 }
+			
+			 
+			 .casa-dashboard-item .casa-dashboard-info, .casa-dashboard-item .casa-dashboard-status{
+				 display:inline;
+			 }
+		
+			.casa-dashboard-item .casa-dashboard-status{
+				padding-left:4px;
+			}
+		
+		
+		
+		  /* mobile */
+         @media only screen and  (max-width: 991px) {
+			 .casa-dashboard-item{
+				margin-bottom:1.8em;
+				height:6em;
+				
+			}
+			 
+         }
+         /* tablet */
+         @media only screen and  (min-width: 576px) {
+
+			  .casa-dashboard-item{
+				margin-bottom:1.8em;
+			}
+			 
+			 
+         }
+         /* desktop */
+         @media only screen and  (min-width: 1200px) {
+         .au-grid .container{background:rgba(161,200,97,0)}
+         
+         }
+		
+		
+		.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+		
+		
+		
+		
+		
+		.menu{
+			float:right;
+			position:relative;
+			padding-left:44px !important;
+		}
+		
+		.menu img{
+			
+			position: absolute;
+			left:10px;
+			top:10px;
+		}
+		
+			.casa-dashboard-item:hover{
+			background:#f0f3f5;
+			cursor:pointer;
+		}
+		
+		</style>
+		
+		
+	
+	
+</head>
+
+<body class="live-demo au-body au-grid js">
+	<header class="au-header logo au-body au-body--dark" role="banner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-7">
+	        <a class="au-header__brand" href="dashboard.html">
+	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+	          <!--<div class="au-header__text">
+	            <h1 class="au-header__heading">myCASA</h1>
+	            <div class="au-header__subline">
+	              Service description that could be a little longer
+	            </div>
+	          </div>-->
+	        </a>
+	      </div>
+				<div class="col-md-3 col-xs-5">
+					<a class="au-btn au-btn--dark menu" href="mycasa-signed-out.html"><img src="menu.png" height="20" />Menu</a>
+					<!--<a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a>-->
+					<!--<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							My Account
+							<span class="badge badge-warning dropdown-badge">1</span>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="org-notifications.html">Notifications <span class="badge badge-warning">1</span></a>
+							<a class="dropdown-item" href="#">My details</a>
+							<a class="dropdown-item" href="mycasa.html" style="border-top:1px solid #efefef;padding-top:.5rem;margin-top:.5rem;">Sign out</a>
+						</div>
+					</div>-->
+				</div>
+	    </div>
+	  </div>
+	</header>
+
+			
+
+			
+
+			
+
+	<div class="body">
+		<div class="container">
+			<br>
+			<div class="col-xs-12">
+<div role="alert" class="au-page-alerts au-page-alerts--success">
+                  <div class="row">
+                     <div class="col-xs-12 col-lg-9">
+                        <h3><abbr title="Remote pilot licence">RePL</abbr> application saved</h3>
+                        <p>Your application has been saved for seven days. You can resume your application from the 'Applications' section of your dashboard.</p>
+                     </div>
+                  </div>
+               </div>
+			</div>
+		</div>
+		
+		
+		<div class="container">
+			
+			<div class="col-xs-12">
+				
+			
+			<header class="au-header" role="banner">
+				<h2 class="au-header-heading">Welcome to myCASA</h2>
+				<!--
+				<div><strong>Bob Furzer</strong><br />
+				ARN: 1234567</div>
+				-->
+				
+			</header>
+
+			<div class="row">
+			
+			
+			 <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-organisation"></div>
+			  		<h2>Profile</h2>
+			  		Bob's Drone School<br />
+			  		ARN: 7654321
+			  	</div>
+			  </div>
+			  
+			
+			  
+			  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-reoc"></div>
+			  		<h2><a href="#">RPA Operator's Certificate (ReOC)</a></h2>
+					
+					<div class="casa-dashboard-line">
+						<div class="casa-dashboard-info">Expires 01 Apr 2019</div>
+						
+					</div>
+					
+					
+					
+			  	</div>
+			  </div>
+			  
+			 
+			  			   <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-rpa"></div>
+			  		<h2><a href="#">Drones and Remotely Piloted Aircraft (RPA)</a></h2>
+			  		4 registered drones and RPAs
+			  	</div>
+			  </div>
+				
+				
+				
+			  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-personnel"></div>
+			  		<h2><a href="#">Key personnel</a></h2>
+			  		Add and manage key personnel <br />
+			  	</div>
+			  </div>
+			  			  
+
+			  
+			 
+			  
+			  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-applications"></div>
+			  		<h2><a href="#">Applications</a></h2>
+					1 saved application<br>
+					1 completed application
+					
+			  	</div>
+			  </div>
+			  
+			  
+			</div>
+			
+			
+			<h2>Services</h2>
+				<br>
+			<div class="row">
+			
+			  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-rpa"></div>
+			  		<h2><a href="#">Drone and <abbr title="Remotely piloted aircraft">RPA</abbr> registration</a></h2>
+			  		Register your drones and RPA <br />
+			  	</div>
+			  </div>
+				
+							  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-licences"></div>
+			  		<h2><a href="#">Submit Remote Pilot Licence <abbr title="Remote pilot licence">(RePL)</abbr> application</a></h2>
+			  		Submit a RePL application for students <br />
+			  	</div>
+			  </div>
+				
+							  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-aircraft"></div>
+			  		<h2><a href="#">Aircraft registration</a></h2>
+			  		Register an aircraft <br />
+			  	</div>
+			  </div>
+				
+											  <div class="col-lg-4 col-xs-12 col-md-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-aoc"></div>
+			  		<h2><a href="#">Air operators certificate</a></h2>
+			  		Apply for an air operators certificate <br />
+			  	</div>
+			  </div>
+		 
+			 
+			 
+			 
+			</div>
+			
+		</div>	
+	</div>
+		
+		
+	
+<div class="footer">
+	<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+	
+	
+</main>
+	
+	
+	
+	
+</body>
+</html>
