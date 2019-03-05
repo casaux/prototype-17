@@ -1,7 +1,37 @@
 $(document).ready(function(){
 	
 	
+	$("#dd-close").css("display","none");
 	
+	
+	$(".menu").bind("click",function(event){
+	
+	
+		
+		if($("#dd-close").css("display")=="block"){
+			$("#dd-close").css("display","none");
+			$("#dd-menu").css("display","block");
+		} else {
+			$("#dd-close").css("display","block");
+			$("#dd-menu").css("display","none");		
+		}
+		
+			return false;
+		event.preventDefault();
+	
+	});
+	
+	$(".casa-dashboard-item").bind("click",function(){
+		
+		var link = $(this).find("a");
+		
+		link = (link).attr("href");
+		
+		if(link){
+			location.href=link;
+		}
+		
+	});
 	
 	$("a.au-btn").bind("click",function(){
 		
