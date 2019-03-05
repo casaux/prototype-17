@@ -31,37 +31,39 @@
 				background-image:url(applications.png);
 			}
 		
-			.icon-reoc{
-				background-image:url(reoc.png);
+		
+			.icon-vh{
+				background-image:url(vh.png);
 			}
-			
-			.icon-rpa{
+		
+		.icon-drones{
 				background-image:url(drones.png);
 			}
+				.icon-aircraft{
+				background-image:url(aircraft.png);
+			}
+				.icon-reoc{
+				background-image:url(reoc.png);
+			}
+				
+		
+		
+		
+		
+		
+		
+				
 
 		
-		.icon-organisation{
-				background-image:url(organisation.png);
-			}
-
-						.icon-aircraft{
-				background-image:url("aircraft.png");
-			}	
 			.casa-dashboard-item{
 				background:#f5f5f5;
 				padding:12px 12px 12px 76px;
 				position:relative;
 				margin-bottom:1.8em;
-				height:9em;
-				border-radius: 5px;
+				height:6em;
+				
 			}
 			
-		.casa-dashboard-item:hover{
-			background:#f0f3f5;
-			cursor:pointer;
-		}
-		
-		
 			.casa-dashboard-item .icon{
 				height:64px;
 				width:64px;
@@ -77,82 +79,23 @@
 				margin:0;
 				padding:0;
 			}
-		
-		
-		 
-			 .casa-dashboard-item .dashbord-line{
-				 
-				 
-			 }
 			
-			 
-			 .casa-dashboard-item .casa-dashboard-info, .casa-dashboard-item .casa-dashboard-status{
-				 display:inline;
-			 }
-		
-			.casa-dashboard-item .casa-dashboard-status{
-				padding-left:4px;
-			}
-		
-		
-		
-		  /* mobile */
+			
+			
+			 /* mobile */
          @media only screen and  (max-width: 991px) {
-			 .casa-dashboard-item{
-				margin-bottom:1.8em;
-				height:auto !important;
-				
-			}
-			 
+         .au-body h2{margin-top:0;padding-top:6px;}
          }
          /* tablet */
          @media only screen and  (min-width: 576px) {
-
-			  .casa-dashboard-item{
-				margin-bottom:1.8em;
-			}
-			 
-			 
+         .au-body h2{margin-top:0;padding-top:6px;}
          }
          /* desktop */
          @media only screen and  (min-width: 1200px) {
-         .au-grid .container{background:rgba(161,200,97,0)}
          
          }
-		
-		
-		.badge-warning {
-    color: #212529;
-    background-color: #ffc107;
-}
-.badge {
-    display: inline-block;
-    padding: .25em .4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25rem;
-}
-		
-		
-		
-		
-		
-		.menu{
-			float:right;
-			position:relative;
-			padding-left:44px !important;
-		}
-		
-		.menu img{
 			
-			position: absolute;
-			left:10px;
-			top:10px;
-		}
+			
 		
 		</style>
 		
@@ -178,8 +121,7 @@
 	        </a>
 	      </div>
 				<div class="col-md-3 col-xs-5">
-					<a class="au-btn au-btn--dark menu" href="mycasa.html"><img src="menu.png" height="20" />Menu</a>
-					<!--<a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a>-->
+					<a class="au-btn au-btn--dark" href="mycasa-signed-out-2.html" style="float:right;">Menu</a>
 					<!--<div class="dropdown">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							My Account
@@ -196,7 +138,15 @@
 	  </div>
 	</header>
 
-			
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
 
 			
 
@@ -210,7 +160,7 @@
 				
 			
 			<header class="au-header" role="banner">
-				<h2 class="au-header-heading">Welcome to myCASA</h2>
+				<h2>Welcome to myCASA</h2>
 				<!--
 				<div><strong>Bob Furzer</strong><br />
 				ARN: 1234567</div>
@@ -218,58 +168,113 @@
 				
 			</header>
 
-				<p style="margin-top:0;">Which profile do you want to use to access myCASA?</p>
 				
-				<br /><br />
 			
 			<div class="row">
 			
 			
-			 <div class="col-lg-6 col-xs-12 col-md-12">
+			 <div class="col-lg-4 col-xs-12">
 			  	<div class="casa-dashboard-item">
 			  		<div class="icon icon-profile"></div>
-			  		<h2><a href="dashboard-hank.html">Hank Baker</a></h2>
-			  		Individual account<br />
+			  		<h2><a href="#">Profile</a></h2>
+			  		Hank Baker<br />
 			  		ARN: 1234567
 			  	</div>
 			  </div>
 			  
-			
+			  <!--
 			  
-			  <div class="col-lg-6 col-xs-12 col-md-12">
+			  <div class="col-xs-4">
 			  	<div class="casa-dashboard-item">
-			  		<div class="icon icon-organisation"></div>
-			  		<h2><a href="dashboard-bobs-drone-school-2.html">Bob's Drone School</a></h2>
-					
-					Organisation account<br />
-					Role: Chief remote pilot<br />
-					ARN: 7654321<Br />
-					<span class="badge badge-warning">Items expiring soon</span>
-					
-					
-					
-					
+			  		<div class="icon icon-reoc"></div>
+			  		<h2><a href="#">RPA Operator's Certificate (ReOC)</a></h2>
+			  		Expiry date: 31 Feb 2019
 			  	</div>
 			  </div>
 			  
+			  -->
+			  
+			  <div class="col-lg-4 col-xs-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-licences"></div>
+			  		<h2><a href="licence-repl.html">Licenses and accreditation</a></h2>
+			  		1 licence <br />
+			  		1 certificate<br />
+			  	</div>
+			  </div>
+			  
+			  <!--
+			  
+			  <div class="col-xs-4">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-rpa"></div>
+			  		<h2><a href="#">Remotely Piloted Aircraft (RPA)</a></h2>
+			  		4 registered RPAs
+			  	</div>
+			  </div>
+			  
+			  -->
+			  
+			  <div class="col-lg-4 col-xs-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-applications"></div>
+			  		<h2><a href="applications-2.html">Applications</a></h2>
+			  		1 application in progress
+					1 completed application
+			  	</div>
+			  </div>
+			  
+			  
+			</div>
+			
+			
+			<h2>Services and new applications</h2>
+			<br />
+			<div class="row">
+
+			
+			 <div class="col-lg-4 col-xs-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-drones"></div>
+			  		<h2><a href="#">Drones and <abbr title="Remotely Piloted Aircraft">RPA</abbr> registration</a></h2>
+			  		Register drones and RPA
+			  	</div>
+			  </div>
+			  
+			 
+			  
+						  <div class="col-lg-4 col-xs-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-aircraft"></div>
+			  		<h2><a href="#">Aircraft registration</a></h2>
+			  		Register aircraft
+			  	</div>
+			  </div>
+			
+			
+			   <div class="col-lg-4 col-xs-12">
+			  	<div class="casa-dashboard-item">
+			  		<div class="icon icon-vh"></div>
+			  		<h2><a href="#"><abbr title="">VH mark</abbr></a></h2>
+			  		Apply for a VH registration mark
+			  	</div>
+			  </div>
+			
+			
+			
+			
+			 
+			 </div>
+			 
+			 
+			 
 			 
 			</div>
 			
 		</div>	
 	</div>
-		
-		
 	
 <div class="footer">
-	<div class="banner">
-				<div class=container>
-					<div class="row">
-					 <div class="col-md-12">
-				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
-				</div>
-				</div>
-			</div>
-		</div>
 		<div class="footer-wrapper">
 			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
 		</div>

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/furnace.min.css">
-	<!--<link rel="stylesheet" href="css/lead.css">-->
+	<link rel="stylesheet" href="css/casa.css">
 	<link rel="stylesheet" href="css/main.css">
 	
 	<style type="text/css">
@@ -31,37 +31,19 @@
 				background-image:url(applications.png);
 			}
 		
-			.icon-reoc{
-				background-image:url(reoc.png);
-			}
+		
 			
-			.icon-rpa{
-				background-image:url(drones.png);
-			}
 
 		
-		.icon-organisation{
-				background-image:url(organisation.png);
-			}
-
-						.icon-aircraft{
-				background-image:url("aircraft.png");
-			}	
 			.casa-dashboard-item{
 				background:#f5f5f5;
 				padding:12px 12px 12px 76px;
 				position:relative;
 				margin-bottom:1.8em;
-				height:9em;
-				border-radius: 5px;
+				height:6em;
+				
 			}
 			
-		.casa-dashboard-item:hover{
-			background:#f0f3f5;
-			cursor:pointer;
-		}
-		
-		
 			.casa-dashboard-item .icon{
 				height:64px;
 				width:64px;
@@ -77,82 +59,6 @@
 				margin:0;
 				padding:0;
 			}
-		
-		
-		 
-			 .casa-dashboard-item .dashbord-line{
-				 
-				 
-			 }
-			
-			 
-			 .casa-dashboard-item .casa-dashboard-info, .casa-dashboard-item .casa-dashboard-status{
-				 display:inline;
-			 }
-		
-			.casa-dashboard-item .casa-dashboard-status{
-				padding-left:4px;
-			}
-		
-		
-		
-		  /* mobile */
-         @media only screen and  (max-width: 991px) {
-			 .casa-dashboard-item{
-				margin-bottom:1.8em;
-				height:auto !important;
-				
-			}
-			 
-         }
-         /* tablet */
-         @media only screen and  (min-width: 576px) {
-
-			  .casa-dashboard-item{
-				margin-bottom:1.8em;
-			}
-			 
-			 
-         }
-         /* desktop */
-         @media only screen and  (min-width: 1200px) {
-         .au-grid .container{background:rgba(161,200,97,0)}
-         
-         }
-		
-		
-		.badge-warning {
-    color: #212529;
-    background-color: #ffc107;
-}
-.badge {
-    display: inline-block;
-    padding: .25em .4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25rem;
-}
-		
-		
-		
-		
-		
-		.menu{
-			float:right;
-			position:relative;
-			padding-left:44px !important;
-		}
-		
-		.menu img{
-			
-			position: absolute;
-			left:10px;
-			top:10px;
-		}
 		
 		</style>
 		
@@ -195,73 +101,131 @@
 	    </div>
 	  </div>
 	</header>
-
-			
-
-			
+	
 
 			
 
 	<div class="body">
 
 		<div class="container">
-			
+						<div class="row">
+			 <div class="col-md-12">
+				<nav class="au-breadcrumbs" aria-label="breadcrumb">
+			  <ul class="au-link-list au-link-list--inline">
+			    <li><a href="dashboard-hank-2.html">myCASA</a></li>
+			    <li>Applications</li>
+			  </ul>
+			</nav>
 			<div class="col-xs-12">
 				
 			
 			<header class="au-header" role="banner">
-				<h2 class="au-header-heading">Welcome to myCASA</h2>
-				<!--
-				<div><strong>Bob Furzer</strong><br />
-				ARN: 1234567</div>
-				-->
+                  <h1 class="break desktop au-header-heading">Applications</h1>
+                  <a class="au-direction-link au-direction-link--left" href="dashboard-hank-2.html">Back</a>
+               </header>
 				
-			</header>
+							 			 				<div class="row">
+                  <div class="col-xs-12">
+					  <div class="detail" style="position:relative;">
+                        <h3 id="heading-drones">
+                           Applications in progress
+                        </h3>
 
-				<p style="margin-top:0;">Which profile do you want to use to access myCASA?</p>
+					<div>
+
+						   <div class=" row header-row">
+							   <div class="col-xs-4 header-row-and">
+								   Date
+								</div>
+							   								<div class="col-xs-4">
+								   Service
+								</div>
+								<div class="col-xs-4">
+									Status
+								</div>
+						   </div>
+
+
+						   <div class="row body-row">
+							   <div class="col-xs-4">
+								06/03/2019
+								</div>
+								<div class="col-xs-4">
+									<a href="#">Remote Operators Certificate</a>
+								</div>
+							   								<div class="col-xs-4">
+ <span class="badge badge-success">In progress</span>
+								</div>
+						   </div>
+						  </div>
+					  </div>
+			 </div>
+											</div>
 				
-				<br /><br />
-			
-			<div class="row">
-			
-			
-			 <div class="col-lg-6 col-xs-12 col-md-12">
-			  	<div class="casa-dashboard-item">
-			  		<div class="icon icon-profile"></div>
-			  		<h2><a href="dashboard-hank.html">Hank Baker</a></h2>
-			  		Individual account<br />
-			  		ARN: 1234567
-			  	</div>
-			  </div>
-			  
-			
-			  
-			  <div class="col-lg-6 col-xs-12 col-md-12">
-			  	<div class="casa-dashboard-item">
-			  		<div class="icon icon-organisation"></div>
-			  		<h2><a href="dashboard-bobs-drone-school-2.html">Bob's Drone School</a></h2>
-					
-					Organisation account<br />
-					Role: Chief remote pilot<br />
-					ARN: 7654321<Br />
-					<span class="badge badge-warning">Items expiring soon</span>
-					
-					
-					
-					
-			  	</div>
-			  </div>
-			  
-			 
-			</div>
-			
-		</div>	
-	</div>
-		
-		
+
+			 			 				<div class="row">
+                  <div class="col-xs-12">
+					  <div class="detail" style="position:relative;">
+                        <h3 id="heading-drones">
+                           Previous applications
+                        </h3>
+
+					<div>
+
+						   <div class=" row header-row">
+							   <div class="col-xs-4 header-row-and">
+								   Date
+								</div>
+							   								<div class="col-xs-4">
+								   Service
+								</div>
+								<div class="col-xs-4">
 	
-<div class="footer">
-	<div class="banner">
+								</div>
+						   </div>
+
+
+						   <div class="row body-row">
+							   <div class="col-xs-4">
+								01/02/2019
+								</div>
+								<div class="col-xs-4">
+								Link ARN
+								</div>
+							   								<div class="col-xs-4">
+																<a href="#">Download</a> (PDF 700KB)
+								</div>
+						   </div>
+						  </div>
+					  </div>
+			 </div>
+											</div>
+				
+
+				
+			 </div>
+	
+
+				   <br /><br />
+				<div class="form-navigation">
+
+				<a class="au-btn" href="dashboard-bobs-drone-school-2.html">Return home</a>
+
+					
+
+				</div>
+				   
+				   
+            </div>
+   
+				   
+				   
+				   
+            </div>
+         </div>
+
+         <div class="footer">
+			 			<div class="banner">
 				<div class=container>
 					<div class="row">
 					 <div class="col-md-12">
@@ -270,16 +234,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-wrapper">
-			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
-		</div>
-	</div>
-	
-	
-</main>
-	
-	
-	
-	
-</body>
+            <div class="footer-wrapper">
+               <iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+   </body>
 </html>

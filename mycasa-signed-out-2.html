@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>myCASA</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<link rel="stylesheet" href="css/lead.css">
+
+</head>
+
+<body class="live-demo au-body au-grid">
+
+
+<main class="au-grid">
+
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+					<div class="logo au-body au-body--dark">
+						<a href="index.html"><img src="img/CASALOGO-white-i.svg" width="256"></a>
+					</div>
+					<div class="user">
+
+					</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="body">
+
+		<div class="container">
+			<br>
+<div role="alert" class="au-page-alerts au-page-alerts--success">
+                  <div class="row">
+                     <div class="col-xs-12 col-lg-9">
+                        <h3>You have successfully signed out</h3>
+                     </div>
+                  </div>
+               </div>
+			<div class="col-xs-12 col-lg-6">
+			<header class="au-header" role="banner">
+				<h1 class="au-header-heading">myCASA</h1>
+				<span class="au-header-subline">Sign in or create an account to access myCASA.</span>
+				<p class="au-body"><strong>Not registered?</strong> <a href="01-createb2c-1.html">Create an account</a>.
+</p>
+
+			</header>
+
+			<form class="validateform" id="signinForm" method="get" action="login-error.html">
+
+
+
+				<label for="text-input-block">Email address</label>
+				<input class="au-text-input au-text-input--block" name="email" id="email" type="text" value="" >
+
+				<br />
+
+				<label for="text-input-block">Password</label>
+				<input class="au-text-input au-text-input--block" name="password" id="password" type="password" value="" >
+
+
+
+				<br />
+
+				<button class="au-btn" id="signin" type= "submit">Sign in</button>
+
+			</form>
+
+			<p><a href="#">Problems signing in?</a></p>
+
+
+
+			</div>
+			
+			
+			<div class="col-xs-12 col-lg-5">
+				<div style="margin-left:1em;">
+				<br />
+				<h3>What is myCASA?</h3>
+
+				<p>myCASA is an online portal where you can access the following services in myCASA: </p>
+
+				  <ul>
+			  	<li>Apply for an Aviation reference number (ARN)</li>
+				<li>Update your contact details</li>
+				<li>View and apply for subsequent issues of RPA operator's certificates (ReOCs)</li>
+			  </ul>
+
+				<p>Other online services will be released into myCASA soon.</p>
+
+				</div>
+
+			</div>
+
+			
+
+			<!--
+			<div class="row">
+			  <div class="col-xs-4"><span>4</span></div>
+			  <div class="col-xs-4"><span>4</span></div>
+			  <div class="col-xs-4"><span>4</span></div>
+			</div>-->
+
+		</div>
+	</div>
+
+<div class="footer">
+		<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+
+
+</main>
+<script type="text/javascript" src="js/furnace.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+		
+	
+	$("#signin").bind("click", function(){
+  
+		if($("#email").val()==""){
+			location.href="login-error.html";
+			return false;
+		} else {
+			location.href="dashboard-select-2.html";
+			return false;
+			
+		}
+		
+		
+   
+ })
+	
+	
+	
+	});
+</script>
+
+
+
+</body>
+</html>
