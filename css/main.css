@@ -1,7 +1,7 @@
 #dropdown-menu{
 	position:absolute;
 	top:0;
-	right:-12px;
+	right:24px;
 	font-size:0.8rem;
 	z-index:999;
 }
@@ -10,14 +10,201 @@
 	background:#61daff;
 	margin:0;
 	padding:8px 0 8px 0;
+	line-height:1.5rem;
+	
+}
+
+#dropdown-menu p#mycasa-home{
+	margin-top:4px;
+}
+
+#dropdown-menu p a:hover {
+	text-decoration:underline;
 }
 
 #dropdown-menu a{
 	color:#135E70;
 	padding-left:16px;
-	padding-bottom:4px;
+	padding-bottom:8px;
 	text-decoration:none;
+	position: relative;
 }
+
+#dropdown-menu img{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+
+
+.banner {padding-left: 25px;}
+.banner {padding-top: 10px;}
+.banner {padding-bottom: 10px;}
+
+
+.icon-profile{
+	background-image:url(../img/profile.png);
+}
+
+.icon-licences{
+	background-image:url(../img/licences.png);
+}
+
+.icon-applications{
+	background-image:url(../img/applications.png);
+}
+
+.icon-reoc{
+	background-image:url(../img/reoc.png);
+}
+
+.icon-rpa{
+	background-image:url(../img/drones.png);
+}
+
+
+.icon-organisation{
+	background-image:url(../img/organisation.png);
+}
+
+
+.icon-vh{
+	background-image:url(../img/vh.png);
+}
+
+.icon-drones{
+	background-image:url(../img/drones.png);
+}
+	.icon-aircraft{
+	background-image:url(../img/aircraft.png);
+}
+	.icon-reoc{
+	background-image:url(../img/reoc.png);
+}
+				
+
+.casa-dashboard-item{
+	background:#f5f5f5;
+	padding:1rem 1rem 1rem 4.5rem;
+	position:relative;
+	margin-bottom:.5rem;
+	min-height:7em;
+	/*border-radius: 5px;*/
+	line-height: 1.5;
+}
+
+
+.casa-dashboard-item .icon{
+	height:3rem;
+	width:3rem;
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	background-size: 3rem 3rem;
+}
+
+.casa-dashboard-profile{
+	min-height:10em;
+	padding-left:7.5rem;
+}
+
+.casa-dashboard-profile .icon{
+	height:6rem;
+	width:6rem;
+	background-size: 6rem 6rem;
+}
+
+.casa-dashboard-item:hover{
+background:#f0f3f5;
+cursor:pointer;
+}
+
+
+
+.casa-dashboard-item h2{
+	font-size:1.2rem;
+	margin:0;
+	padding:0;
+}
+
+
+
+ .casa-dashboard-item .dashbord-line{
+
+
+ }
+
+
+ .casa-dashboard-item .casa-dashboard-info, .casa-dashboard-item .casa-dashboard-status{
+	 display:inline;
+ }
+
+.casa-dashboard-item .casa-dashboard-status{
+	padding-left:4px;
+}
+
+
+
+/* mobile */
+@media only screen and  (max-width: 991px) {
+ .casa-dashboard-item{
+	margin-bottom:1rem;
+	height:auto !important;
+
+}
+
+}
+/* tablet */
+@media only screen and  (min-width: 576px) {
+
+  .casa-dashboard-item{
+	margin-bottom:1rem;
+}
+
+
+}
+/* desktop */
+@media only screen and  (min-width: 1200px) {
+.au-grid .container{background:rgba(161,200,97,0)}
+
+}
+
+
+.badge-warning {
+color: #212529;
+background-color: #ffc107;
+}
+.badge {
+display: inline-block;
+padding: .25em .4em;
+font-size: 75%;
+font-weight: 700;
+line-height: 1;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+border-radius: .25rem;
+}
+
+
+
+
+
+.menu{
+float:right;
+position:relative;
+padding-left:44px !important;
+}
+
+.menu img{
+
+position: absolute;
+left:10px;
+top:10px;
+}
+
+
+
 
 html,body{
   font-size:100%;
@@ -286,9 +473,10 @@ footer{
     margin: -2rem 0 1rem 0;
     padding: 3rem 0 1rem 0;
   }
+	 /*
   .au-body h2, .au-body .au-display-xl, .au-display-xl{font-size:1.5rem;}
   .au-body h3, .au-body .au-display-lg, .au-display-lg {font-size:1.2rem;}
-  /*.container{
+ .container{
   	max-width:660px;
   }*/
   .grid{margin:0 1rem;}

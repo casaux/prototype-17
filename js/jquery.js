@@ -21,6 +21,10 @@ $(document).ready(function(){
 	
 	});
 	
+	
+	$(".casa-dashboard-item").html()
+	
+	
 	$(".casa-dashboard-item").bind("click",function(){
 		
 		var link = $(this).find("a");

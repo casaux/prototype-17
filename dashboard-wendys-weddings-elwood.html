@@ -21,145 +21,6 @@
 			.banner {padding-top: 10px;}
 			.banner {padding-bottom: 10px;}
 		
-		
-			.icon-profile{
-				background-image:url(profile.png);
-			}
-			
-			.icon-licences{
-				background-image:url(licences.png);
-			}
-			
-			.icon-applications{
-				background-image:url(applications.png);
-			}
-		
-			.icon-reoc{
-				background-image:url(reoc.png);
-			}
-			
-			.icon-rpa{
-				background-image:url(drones.png);
-			}
-			.icon-organisation{
-				background-image:url(organisation.png);
-			}
-			.icon-personnel{
-				background-image:url(personnel.png);
-			}
-							.icon-aircraft{
-				background-image:url("aircraft.png");
-			}
-									.icon-aoc{
-				background-image:url("aoc.png");
-			}
-			.casa-dashboard-item{
-				background:#f5f5f5;
-				padding:12px 12px 12px 76px;
-				position:relative;
-				margin-bottom:1.8em;
-				height:6em;
-				border-radius: 5px;
-			}
-			
-			.casa-dashboard-item .icon{
-				height:64px;
-				width:64px;
-				position:absolute;
-				top:4px;
-				left:4px;
-				background-size: 64px 64px;
-
-			}
-			
-			.casa-dashboard-item h2{
-				font-size:1em;
-				margin:0;
-				padding:0;
-			}
-		
-
-		
-		 
-			 .casa-dashboard-item .dashbord-line{
-				 
-				 
-			 }
-			
-			 
-			 .casa-dashboard-item .casa-dashboard-info, .casa-dashboard-item .casa-dashboard-status{
-				 display:inline;
-			 }
-		
-			.casa-dashboard-item .casa-dashboard-status{
-				padding-left:4px;
-			}
-		
-		
-		
-		  /* mobile */
-         @media only screen and  (max-width: 991px) {
-			 .casa-dashboard-item{
-				margin-bottom:1.8em;
-				height:6em;
-				
-			}
-			 
-         }
-         /* tablet */
-         @media only screen and  (min-width: 576px) {
-
-			  .casa-dashboard-item{
-				margin-bottom:1.8em;
-			}
-			 
-			 
-         }
-         /* desktop */
-         @media only screen and  (min-width: 1200px) {
-         .au-grid .container{background:rgba(161,200,97,0)}
-         
-         }
-		
-		
-		.badge-warning {
-    color: #212529;
-    background-color: #ffc107;
-}
-.badge {
-    display: inline-block;
-    padding: .25em .4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25rem;
-}
-		
-		
-		
-		
-		
-		.menu{
-			float:right;
-			position:relative;
-			padding-left:44px !important;
-		}
-		
-		.menu img{
-			
-			position: absolute;
-			left:10px;
-			top:10px;
-		}
-		
-			.casa-dashboard-item:hover{
-			background:#f0f3f5;
-			cursor:pointer;
-		}
-		
 		</style>
 		
 		
@@ -183,12 +44,12 @@
 	          </div>-->
 	        </a>
 	      </div>
-				<div class="col-md-3 col-xs-5">
+				<div class="col-md-4 col-xs-6">
 					<div id="dropdown-menu">
-						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="menu.png" height="20" />Menu</a></div>
-						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="close.png" height="20" />Close</a><br />
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="img/close.png" height="20" />Close</a><br />
 						<br />
-						<p><a href="#">myCASA home</a></p>
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
 						<p><a href="#">Switch account</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
@@ -227,7 +88,7 @@
 			 <div class="col-lg-4 col-xs-12 col-md-12">
 			  	<div class="casa-dashboard-item">
 			  		<div class="icon icon-organisation"></div>
-			  		<h2>Profile</h2>
+			  		<h2><a href="#">Profile</a></h2>
 			  		Wendy's Weddings Pty Ltd<br />
 			  		ARN: 7654321
 			  	</div>
@@ -283,7 +144,7 @@
 			  </div>
 			  
 			  
-			</div>
+			
 			<!--
 			
 			<h2>Services and new applications</h2>
